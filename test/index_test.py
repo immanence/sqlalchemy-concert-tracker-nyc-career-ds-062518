@@ -4,7 +4,7 @@ from base import Base
 sys.path.insert(0, '..')
 from queries import *
 
-exec(open("./run.py").read())
+exec(open("./models/runcopy.py").read())
 
 class TestConcertTracker(unittest.TestCase):
     users = session.query(User).all()
